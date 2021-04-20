@@ -1,0 +1,553 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <!-- Olympia 2.0, created with love by Sid Engel. -->
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+  <!-- Roboto Font + Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- AOS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- MC Player Counter -->
+  <script src="https://leonardosnt.github.io/mc-player-counter/dist/mc-player-counter.min.js"></script>
+
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="./src/css/theme.css" />
+
+  <!-- Theme JS -->
+  <script src="./src/js/smoothscroll.js"></script>
+  <script src="./src/js/nav.js"></script>
+  
+   <!-- Redirect map link depending on server availability -->
+  <script src="./src/js/server_map_redirect.js"></script>
+
+  <!-- Site Title -->
+  <title>Omnium Network</title>
+
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Pedro Sampaio">
+  <meta name="description" content="A network of minecraft servers with games like survival, skyblock, rpg, hungergames, kitpvp, tntrun, anarchy and soon bedwars and more">
+  <meta name="keywords" content="skyblock, hungergames, rpg, survival, anarchy, tntrun, kitpvp, minecraft, omnium, omnium.serveminecraft.net, Minecraft Server, Minecraft, Fun, Play, Portal, Website, minecraft survival">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <a href="#about" class="brand-logo">omc</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#vip">Store</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#vip">Store</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- / Nav -->
+
+    </div>
+    <div class="header-content center-align" data-aos="fade">
+      <!--<h1 style="padding-top: 6%;"><font color="white"><b>Omnium Network</font></b></h1>-->
+	  <h1 style=""></h1>
+	  <img src="src/img/logo.png" alt="omnium logo">
+      <h6></h6>
+      <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#">Vote</a>
+    </div>
+  </div>
+
+  <!-- Info -->
+
+  <div class="info center-align" data-aos="fade">
+    <div class="main">
+      <div class="row">
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/anarchy.png">
+          <h4>Pucmon</h4>
+          <i class="chip">
+		  <span class = "status" data-playercounter-ip="omnium.serveminecraft.net:25570" data-playercounter-status style="display:none"></span>
+          <span data-playercounter-ip="omnium.serveminecraft.net:25570">0</span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" id="dynmap" href="http://omnium.serveminecraft.net:8170" style="margin-bottom: 9%; margin-top: 2%;">Map</a>
+		  <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Rules</a>
+        </div>
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/rpgsurvival.png">
+          <h4>RPG</h4>
+          <i class="chip">
+		  <span class = "status" data-playercounter-ip="omnium.serveminecraft.net:25577" data-playercounter-status style="display:none"></span>
+          <span data-playercounter-ip="omnium.serveminecraft.net:25577">0</span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" id="dynmap" href="http://omnium.serveminecraft.net:8177" style="margin-bottom: 9%; margin-top: 2%;">Map</a>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Rules</a>
+		</div>
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/skyblock.png">
+          <h4>SkyBlock</h4>
+          <i class="chip">
+		  <span class = "status" data-playercounter-ip="omnium.serveminecraft.net:25574" data-playercounter-status style="display:none"></span>
+          <span data-playercounter-ip="omnium.serveminecraft.net:25574">0</span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" id="dynmap" href="http://omnium.serveminecraft.net:8174" style="margin-bottom: 9%; margin-top: 2%;">Map</a>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Rules</a>
+		</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SECOND LINE INFO -->
+    <div class="info center-align" data-aos="fade">
+    <div class="main">
+      <div class="row">
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/hungergames.png">
+          <h4>Hunger Games</h4>
+          <i class="chip">
+		  <span class = "status" data-playercounter-ip="omnium.serveminecraft.net:25567" data-playercounter-status style="display:none"></span>
+          <span data-playercounter-ip="omnium.serveminecraft.net:25567">0</span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" id="dynmap" href="http://omnium.serveminecraft.net:8167" style="margin-bottom: 9%; margin-top: 2%;">Map</a>
+		  <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Rules</a>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+  <!-- / Info -->
+
+  <!-- About -->
+
+  <div class="about" id="about">
+    <div class="main">
+      <div class="row">
+        <div class="col s12 l5 align-center">
+          <img class="responsive-img" src="./src/img/loop.gif" data-aos="fade-right">
+        </div>
+        <div class="col s12 l7" data-aos="fade-left">
+          <h4>What is Omnium?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed
+            ornare ornare. Suspendisse finibus non sem vitae viverra.Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien
+            sed ornare ornare. Suspendisse finibus non sem vitae viverra. Morbi molestie mollis molestie.</p>
+          <p>Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit.</p>
+          <a class="waves-effect waves-light btn-large grey darken-4" href = "https://discord.gg/yyhJ5hC" style="margin-top: 2%;" href="#">Discord</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- / About -->
+
+  <!-- Staff -->
+
+  <div class="staff" id="staff">
+    <div class="main">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center-align" style="padding-bottom: 1
+        %;">Our Staff Team</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400">
+        <div class="card-panel no-padding">
+          <div class="row">
+            <div class="col s12 no-padding">
+              <img class="responsive-img materialboxed" src="./src/img/profile3.png">
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <h5>Kiko (Vanhala)</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <blockquote style="margin: 0% 8% 0% 8%;">
+			    Omnium owner and main developer. A rare specimen known as caffeine-free developer. If anything goes wrong, the first one to blame. 
+              </blockquote>
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="150"> -->
+        <!-- <div class="card-panel no-padding"> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col s12 no-padding"> -->
+              <!-- <img class="responsive-img materialboxed" src="./src/img/profile3.png"> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row main"> -->
+            <!-- <div class="col s12 center-align"> -->
+              <!-- <h5>Sid Engel</h5> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col s12"> -->
+              <!-- <blockquote style="margin: 0% 8% 0% 8%;"> -->
+                <!-- I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community. -->
+              <!-- </blockquote> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row main"> -->
+            <!-- <div class="col s12 center-align"> -->
+              <!-- <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a> -->
+              <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="300"> -->
+        <!-- <div class="card-panel no-padding"> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col s12 no-padding"> -->
+              <!-- <img class="responsive-img materialboxed" src="./src/img/profile3.png"> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row main"> -->
+            <!-- <div class="col s12 center-align"> -->
+              <!-- <h5>Sid Engel</h5> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col s12"> -->
+              <!-- <blockquote style="margin: 0% 8% 0% 8%;"> -->
+                <!-- I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community. -->
+              <!-- </blockquote> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row main"> -->
+            <!-- <div class="col s12 center-align"> -->
+              <!-- <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a> -->
+              <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="450"> -->
+        <!-- <div class="card-panel no-padding"> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col s12 no-padding"> -->
+              <!-- <img class="responsive-img materialboxed" src="./src/img/profile3.png"> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row main"> -->
+            <!-- <div class="col s12 center-align"> -->
+              <!-- <h5>Sid Engel</h5> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col s12"> -->
+              <!-- <blockquote style="margin: 0% 8% 0% 8%;"> -->
+                <!-- I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community. -->
+              <!-- </blockquote> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row main"> -->
+            <!-- <div class="col s12 center-align"> -->
+              <!-- <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a> -->
+              <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</div>
+  <!-- / Staff -->
+
+  <!-- Vip -->
+  <div class="vip center-align" id="vip">
+    <div class="main">
+      <div class="row" data-aos="fade">
+        <div class="col s12">
+          <h4>Donations</h4>
+		  <p>Help the server by donating (disabled during alpha)</p>
+		  <a class="waves-effect waves-light btn-large grey darken-4" href="http://omnium.craftingstore.net/">Donate</a>
+        </div>
+      </div>
+      <!--<div class="row">
+        <div class="col s12 l4" data-aos="fade-right">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <h5>Vip</h5>
+                <span>$5.00 USD</span>
+                <br><br>
+                <table class="centered responsive-table striped">
+                  <tbody>
+                    <tr>
+                      <td>Perk 1</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 2</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 3</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 4</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 5</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="#">Purchase</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4" data-aos="fade">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <h5>Vip</h5>
+                <span>$10.00 USD</span>
+                <br><br>
+                <table class="centered responsive-table striped">
+                  <tbody>
+                    <tr>
+                      <td>Perk 1</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 2</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 3</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 4</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 5</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="#">Purchase</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4" data-aos="fade-left">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <h5>Vip++</h5>
+                <span>$15.00 USD</span>
+                <br><br>
+                <table class="centered responsive-table striped">
+                  <tbody>
+                    <tr>
+                      <td>Perk 1</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 2</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 3</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 4</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 5</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="#">Purchase</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+  <!-- /Vip -->
+
+  <!-- Screenshots -->
+  <div class="screenshots center-align" id="screenshots">
+    <div class="main" data-aos="fade">
+      <div class="row">
+        <div class="col s12">
+          <h4>Server Screenshots</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Screenshots -->
+
+  <!-- Contact -->
+  <div class="contact" id="contact" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
+    <div class="main">
+      <div class="card-panel" data-aos="fade-up">
+        <h4 class="center-align">Contact Us</h4>
+        <form class="col s12" action="send_form_email.php" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" class="form-control" id="email" name="email" placeholder="Email" required />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="message" name = "message" class="materialize-textarea" required></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+              </div>
+              <div>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Submit</button>
+              </div>
+            
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /Contact -->
+
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4 z-depth-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Official Twitter Feed</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">FaceBook Group</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4 z-depth-4">
+      <div class="container">
+        <!-- Please give credit, where credit is due. Leave this here... -->
+        Created with care, by Sid Engel.
+        <a class="grey-text text-lighten-4 right" href="#!">©Omnium 2019</a>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- AOS INIT -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-sine',
+      disable: 'mobile',
+    });
+  </script>
+
+  <!-- Mobile Nav INIT -->
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
+  
+</body>
+
+</html>
