@@ -31,6 +31,7 @@
   <!-- Theme JS -->
   <script src="./src/js/smoothscroll.js"></script>
   <script src="./src/js/nav.js"></script>
+  <script src="./src/js/3dcarousel.js"></script>
   
    <!-- Redirect map link depending on server availability -->
   <script src="./src/js/server_map_redirect.js"></script>
@@ -59,14 +60,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#staff">Staff</a></li>
             <li><a href="#vip">Store</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#screenshots">Pictures</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="#about">About</a></li>
             <li><a href="#staff">Staff</a></li>
             <li><a href="#vip">Store</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#screenshots">Pictures</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -90,7 +91,7 @@
     <div class="main">
       <div class="row">
         <div class="col l4 s12">
-          <img class="responsive-img" src="./src/img/anarchy.png">
+          <img class="responsive-img" src="./src/img/thumb_pucmon.png">
           <h4>Pucmon</h4>
           <i class="chip">
 		  <span class = "status" data-playercounter-ip="omnium.serveminecraft.net:25570" data-playercounter-status style="display:none"></span>
@@ -102,16 +103,15 @@
 		  <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Rules</a>
         </div>
         <div class="col l4 s12">
-          <img class="responsive-img" src="./src/img/rpgsurvival.png">
-          <h4>RPG</h4>
+          <img class="responsive-img" src="./src/img/thumb_2dmb.jpg">
+          <h4>2DMapBuilder</h4>
           <i class="chip">
 		  <span class = "status" data-playercounter-ip="omnium.serveminecraft.net:25577" data-playercounter-status style="display:none"></span>
           <span data-playercounter-ip="omnium.serveminecraft.net:25577">0</span> Players Online
         </i>
           <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <a class="btn-large waves-effect waves-light grey darken-4" id="dynmap" href="http://omnium.serveminecraft.net:8177" style="margin-bottom: 9%; margin-top: 2%;">Map</a>
-          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Rules</a>
+          <a class="btn-large waves-effect waves-light grey darken-4" href="https://bitbucket.org/KikoSampaio/2dmapbuilder/wiki/Home" style="margin-bottom: 9%; margin-top: 2%;">About</a>
 		</div>
         <div class="col l4 s12">
           <img class="responsive-img" src="./src/img/skyblock.png">
@@ -308,7 +308,8 @@
         <div class="col s12">
           <h4>Donations</h4>
 		  <p>Help the server by donating (disabled during alpha)</p>
-		  <a class="waves-effect waves-light btn-large grey darken-4" href="http://omnium.craftingstore.net/">Donate</a>
+		  <!-- <a class="waves-effect waves-light btn-large grey darken-4" href="http://omnium.craftingstore.net/">Donate</a> -->
+          
         </div>
       </div>
       <!--<div class="row">
@@ -418,53 +419,20 @@
     <div class="main" data-aos="fade">
       <div class="row">
         <div class="col s12">
-          <h4>Server Screenshots</h4>
+          <h4>Pictures</h4>     
+          
         </div>
       </div>
-      <div class="row">
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
+             <div class="carousel" id="demo-carousel">   
+            <a class="carousel-item" href="#one!"><img src="src/img/cityscape.jpg"></a>     
+            <a class="carousel-item" href="#two!"><img src="src/img/cityscape.jpg"></a>    
+            <a class="carousel-item" href="#three!"><img src="src/img/cityscape.jpg"></a>    
+            <a class="carousel-item" href="#four!"><img src="src/img/cityscape.jpg"></a>    
+            <a class="carousel-item" href="#five!"><img src="src/img/cityscape.jpg"></a>
         </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
-          </div>
-        </div>
-      </div>
+        
+
+      
     </div>
   </div>
   <!-- /Screenshots -->

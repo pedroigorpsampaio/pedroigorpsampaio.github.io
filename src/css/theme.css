@@ -111,3 +111,13 @@ nav {
     -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
 }
+
+/* Carousel */
+
+.carousel { 
+min-height: 200px;
+}
+
+.carousel .carousel-item {
+    margin-top:-7%;
+width:500px !important;}
