@@ -115,9 +115,15 @@ nav {
 /* Carousel */
 
 .carousel { 
-min-height: 200px;
+min-height: 500px;
 }
 
 .carousel .carousel-item {
-    margin-top:-7%;
+margin-top:-10%;
 width:500px !important;}
+
+/* Card */
+
+.card span {
+    margin-left: 6%
+}
