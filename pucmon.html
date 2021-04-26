@@ -43,24 +43,23 @@
 
 <body>
 
+  <div id = "content">
   <!-- Nav -->
   <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-size: cover; background-attachment: fixed;">
     <div class="navbar-fixed">
       <nav class="z-depth-0">
         <div class="nav-wrapper">
-          <a href="#about" class="brand-logo">psampaio</a>
+          <a href="index.html" class="brand-logo">psampaio</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -79,7 +78,6 @@
     </div>
   </div>
 
-  <div id = "content">
       <!-- About -->
       <div class="about" id="about">
         <div class="main">
@@ -99,7 +97,9 @@
         </div>
       </div>
 
-   
+      <!-- / About -->
+
+      
          <!-- Media -->
       <div class="screenshots center-align" id="media">
         <div class="main">
@@ -122,71 +122,11 @@
           </div>
         </div>
       </div>
+      
       <!-- Media -->
   </div>
-  <!-- Contact -->
-  <div class="contact" id="contact" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%;  background-size: cover; background-attachment: fixed;">
-    <div class="main">
-      <div class="card-panel" data-aos="fade-up">
-        <h4 class="center-align">Contact</h4>
-               <div class="card-panel no-padding">
-          <div class="row">
-            <div class="col s12 no-padding">
-              <img class="responsive-img materialboxed" src="./src/img/profile_photo.jpg">
-            </div>
-          </div>
-          <div class="row main">
-            <div class="col s12 center-align">
-              <h5>Pedro Sampaio</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              <blockquote style="margin: 0% 8% 0% 8%;">
-			    A rare specimen known as caffeine-free developer. Its main behaviour is programming, but some have seen it playing guitar, drums, gaming, working out and skateboarding.
-              </blockquote>
-            </div>
-          </div>
-          <div class="row main">
-            <div class="col s12 center-align">
-              <a href="mailto:pedroigorpsampaio@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-              <a href="https://www.youtube.com/channel/UCoUFrv8964F9lAK5H95DHxg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-              <a href="https://www.linkedin.com/in/pedro-sampaio-2a224a156/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <!-- /Contact -->
 
 
-  <!-- Footer -->
-  <footer class="page-footer grey darken-4 z-depth-4">
-    <div class="footer-copyright grey darken-4 z-depth-4">
-      <div class="container">
-        <!-- Please give credit, where credit is due. Leave this here... -->
-        Base template by Sid Engel.
-        Background Photo by <a href="https://unsplash.com/@lorenzoherrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lorenzo Herrera</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        <a class="grey-text text-lighten-4 right" href="#!">©Pedro Sampaio</a>
-      </div>
-    </div>
-  </footer>
-  <!-- /Footer -->
-
-  <!-- AOS INIT -->
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-sine',
-      disable: 'mobile',
-    });
-  </script>
-
-  <!-- Mobile Nav INIT -->
-  <script>
-    $(".button-collapse").sideNav();
-  </script>
-  
 </body>
 
 </html>
