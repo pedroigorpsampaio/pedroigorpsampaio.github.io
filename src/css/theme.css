@@ -127,3 +127,13 @@ width:500px !important;}
 .card span {
     margin-left: 6%
 }
+
+/* Texts */
+div.text_left {
+  text-align: left;
+}
+
+.defaultlist li {
+    list-style: square !important;
+    margin-left: 35px;
+}
