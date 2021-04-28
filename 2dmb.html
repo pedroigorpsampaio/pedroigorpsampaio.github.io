@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <!-- Olympia 2.0, created with love by Sid Engel. -->
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+  <!-- Roboto Font + Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- AOS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="./src/css/theme.css" />
+
+  <!--  JS -->
+  <script src="./src/js/smoothscroll.js"></script>
+  <script src="./src/js/nav.js"></script>
+  <script src="./src/js/helper.js"></script>
+
+  <!-- Site Title -->
+  <title>Pedro Igor Porfírio Sampaio</title>
+
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Pedro Sampaio">
+  <meta name="description" content="A personal page with the goal of showcasing some of my projects">
+  <meta name="keywords" content="programming, software development, game development, web, android, teaching, reserach, ai, pseudo3d">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div id = "content">
+  <!-- Nav -->
+  <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-size: cover; background-attachment: fixed;">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">psampaio</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- / Nav -->
+
+    </div>
+    <div class="header-content center-align" data-aos="fade">
+      <a href="#contact">
+	  <img src="src/img/logo.png" style="margin-bottom: 6%; margin-top: 2%;"  alt="logo"></a>
+    </div>
+  </div>
+
+      <!-- About -->
+      <div class="about" id="about">
+        <div class="main">
+          <div class="row">
+            <div class="col s12 l5 align-center">
+              <img class="responsive-img materialboxed" src="./src/img/2dmb/thumb_2dmb.jpg" data-aos="fade-up">
+            </div>
+            <div class="col s12 l7" data-aos="fade-up">
+              <h4>2DMapBuilder</h4>
+              <p> 2DMapBuilder is a 2D map editor that helps you develop the scenario for your 2D games. 
+              Its primary focus is to aid map designers in tile map editing, as well as sprites and map objects arranging. 
+              2DMapBuilder was used in other projects such as "Pucmon".
+               Access the project's wiki for more details.                   
+              </p>
+              <p>Technology: Java, Swing, XML, Eclipse</p>
+              <a class="waves-effect waves-light btn-large grey darken-4" href = "https://bitbucket.org/KikoSampaio/2dmapbuilder/wiki/Home" style="margin-top: 2%;">Wiki</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- / About -->
+
+      
+       <!-- Media -->
+      <div class="screenshots center-align" id="media">
+        <div class="main">
+          <div class="row" data-aos="fade">
+            <div class="col s12">
+              <h4>Media</h4>
+              <p>Click on the media to enlarge it</p>
+            </div>
+            <div class="carousel" id="demo-carousel2" >    
+                <a class="carousel-item" href="#zero!"><img class="responsive-img materialboxed" src="src/img/2dmb/media_2dmb0.png"></a>
+                <a class="carousel-item" href="#one!"><img class="responsive-img materialboxed" src="src/img/2dmb/media_2dmb1.png"></a>    
+                <a class="carousel-item" href="#two!"><img class="responsive-img materialboxed"  src="src/img/2dmb/media_2dmb2.png"></a>    
+                <a class="carousel-item" href="#three!"><img class="responsive-img materialboxed" src="src/img/2dmb/media_2dmb3.png"></a>  
+                <a class="carousel-item" href="#four!"><img class="responsive-img materialboxed" src="src/img/2dmb/thumb_2dmb.jpg"></a>                  
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Media -->
+  </div>
+
+
+</body>
+
+</html>
