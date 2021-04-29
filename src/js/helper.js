@@ -21,6 +21,9 @@ $(document).ready(function(){
             e.preventDefault();        
       });
           
-     
+      $('#p3dpage').click(function(e){
+            $('#content').load('pseudo3d.html');
+            e.preventDefault();        
+      });
     });
  
