@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+  <!-- Roboto Font + Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- AOS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="./src/css/theme.css" />
+
+  <!--  JS -->
+  <script src="./src/js/smoothscroll.js"></script>
+  <script src="./src/js/nav.js"></script>
+  <script src="./src/js/helper.js"></script>
+
+  <!-- Site Title -->
+  <title>Pedro Igor Porfírio Sampaio</title>
+
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Pedro Sampaio">
+  <meta name="description" content="A personal page with the goal of showcasing some of my projects">
+  <meta name="keywords" content="programming, software development, game development, web, android, teaching, reserach, ai, pseudo3d">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div id = "content">
+  <!-- Nav -->
+  <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-size: cover; background-attachment: fixed;">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">psampaio</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- / Nav -->
+
+    </div>
+    <div class="header-content center-align" data-aos="fade">
+      <a href="#contact">
+	  <img src="src/img/logo.png" style="margin-bottom: 6%; margin-top: 2%;"  alt="logo"></a>
+    </div>
+  </div>
+
+      <!-- About -->
+      <div class="about" id="about">
+        <div class="main">
+          <div class="row">
+            <div class="col s12 l5 align-center">
+              <img class="responsive-img materialboxed" src="./src/img/egames/thumb_egames.jpg" data-aos="fade-up">
+            </div>
+            <div class="col s12 l7" data-aos="fade-up">
+              <h4>Educational Games</h4>
+              <p> An educational games plugin for Moodle that aims to help in the learning process by motivating students with gamification aspects. Alongside with the plugin,
+                a multiplayer trivia game that uses the plugin capabilities is provided as an example of usage. The game uses the plugin to get questions available from
+                Moodle courses and creates a quiz game with multiplayer features that enables the competition between courses students. 
+                Download the project's .pdf (portuguese only) for more details. See media for pictures of the plugin and the game.                   
+              </p>
+              <p>Technology: PHP, Javascript, HTML, CSS, JQuery, MySQL, phpMyAdmin, XAMPP, Moodle</p>
+              <a class="waves-effect waves-light btn-large grey darken-4" href = "src/doc/doc_egames.pdf" style="margin-top: 2%;">PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- / About -->
+
+      
+       <!-- Media -->
+      <div class="screenshots center-align" id="media">
+        <div class="main">
+          <div class="row" data-aos="fade">
+            <div class="col s12">
+              <h4>Media</h4>
+              <p>Click on the media to enlarge it</p>
+            </div>
+            <div class="carousel" id="demo-carousel2" >                 
+                <a class="carousel-item" id = "default_car" href="#one!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames1.jpg"></a>    
+                <a class="carousel-item" id = "default_car" href="#two!"><img class="responsive-img materialboxed"  src="src/img/egames/media_egames2.jpg"></a>    
+                <a class="carousel-item" id = "default_car" href="#three!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames3.jpg"></a>  
+                <a class="carousel-item" id = "default_car" href="#four!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames4.jpg"></a>
+                <a class="carousel-item" id = "default_car" href="#five!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames5.jpg"></a>
+                <a class="carousel-item" id = "default_car" href="#six!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames6.jpg"></a>
+                <a class="carousel-item" id = "default_car" href="#seven!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames7.jpg"></a>
+                <a class="carousel-item" id = "default_car" href="#eight!"><img class="responsive-img materialboxed" src="src/img/egames/media_egames8.jpg"></a>
+                <a class="carousel-item" id = "default_car" href="#nine!"><img class="responsive-img materialboxed" src="src/img/egames/thumb_egames.jpg"></a>                  
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Media -->
+  </div>
+
+
+</body>
+
+</html>

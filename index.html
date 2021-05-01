@@ -2,8 +2,6 @@
 <html>
 <head>
 
-  <!-- Olympia 2.0, created with love by Sid Engel. -->
-
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -108,7 +106,7 @@
             </div>
           </div>
             <div class="carousel" id="demo-carousel" >   
-                 <div class="carousel-item">
+                 <div class="carousel-item" id = "default_car">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="src/img/pucmon/thumb_pucmon.png">
@@ -123,7 +121,7 @@
                         </div>
                     </div>
                 </div>      
-                 <div class="carousel-item">
+                 <div class="carousel-item" id = "default_car">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="src/img/2dmb/thumb_2dmb.jpg">
@@ -139,7 +137,7 @@
                         </div>
                     </div>
                 </div>    
-                 <div class="carousel-item">
+                 <div class="carousel-item" id = "default_car">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="src/img/micechallenge/thumb_mc.png">
@@ -154,7 +152,7 @@
                         </div>
                     </div>
                 </div>                  
-                 <div class="carousel-item">
+                 <div class="carousel-item" id = "default_car">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="src/img/pseudo3d/thumb_p3d.png">
@@ -169,11 +167,53 @@
                         </div>
                     </div>
                 </div>          
-                <a class="carousel-item" href="#four!"><img src="src/img/cityscape.jpg"></a>    
-            </div>
-            
-
-          
+                <div class="carousel-item" id = "default_car">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="src/img/egames/thumb_egames.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Educational Games<i class="material-icons right">more_vert</i></span>
+                          <p><a id = "egamespage" href="#about">Page</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Educational Games<i class="material-icons right">close</i></span>
+                          <p>An educational games plugin for Moodle that aims to help in the learning process by motivating students with gamification aspects. Alongside with the plugin,
+                          a multiplayer trivia game that uses the plugin capabilities is provided as an example of usage</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="carousel-item" id = "default_car">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="src/img/zelda/thumb_zelda.png">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Zelda AI<i class="material-icons right">more_vert</i></span>
+                          <p><a id = "zeldapage" href="#about">Page</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <p>A knowledge based agent capable of reason in an unknown environment based on the world of The Legend of Zelda games.</p>
+                          <span class="card-title grey-text text-darken-4">Zelda AI<i class="material-icons right">close</i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id = "default_car">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="src/img/other/thumb_other.png">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Other Projects<i class="material-icons right">more_vert</i></span>
+                          <p><a id = "otherpage" href="#about">Page</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <p>A collection of pictures and videos of other projects that did not make to the big screen.</p>
+                          <span class="card-title grey-text text-darken-4">Other Projects<i class="material-icons right">close</i></span>
+                        </div>
+                    </div>
+                </div>                 
+            </div>   
         </div>
       </div>
       <!-- Projects -->
@@ -203,15 +243,15 @@
               <p>Click on the media to enlarge it</p>
             </div>
             <div class="carousel" id="demo-carousel2" >    
-                <a class="carousel-item" href="#one!"><img class="responsive-img materialboxed" src="src/img/cityscape.jpg"></a>    
-                <a class="carousel-item" href="#two!"><img class="responsive-img materialboxed"  src="src/img/cityscape.jpg"></a>    
-                <a class="carousel-item" href="#three!">  
+                <a class="carousel-item" id = "bigger_car" href="#one!"><img class="responsive-img materialboxed" src="src/img/cityscape.jpg"></a>    
+                <a class="carousel-item" id = "bigger_car" href="#two!"><img class="responsive-img materialboxed"  src="src/img/cityscape.jpg"></a>    
+                <a class="carousel-item" id = "bigger_car" href="#three!">  
                     <video class="responsive-video" controls>
                         <source src="src/vid/TV_PUC_Rio_IntroEng.mp4" type="video/mp4">
                     </video>
                 </a>
-                <a class="carousel-item" href="#three!"><img class="responsive-img materialboxed" src="src/img/cityscape.jpg"></a>    
-                <a class="carousel-item" href="#four!"><img class="responsive-img materialboxed"  src="src/img/cityscape.jpg"></a>    
+                <a class="carousel-item" id = "bigger_car" href="#three!"><img class="responsive-img materialboxed" src="src/img/cityscape.jpg"></a>    
+                <a class="carousel-item" id = "bigger_car" href="#four!"><img class="responsive-img materialboxed"  src="src/img/cityscape.jpg"></a>    
             </div>
           </div>
         </div>
@@ -222,9 +262,9 @@
   <!-- Contact -->
   <div class="contact" id="contact" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%;  background-size: cover; background-attachment: fixed;">
     <div class="main">
-      <div class="card-panel" data-aos="fade-up">
-        <h4 class="center-align">Contact</h4>
-               <div class="card-panel no-padding">
+      <div class="card-panel transparent" data-aos="fade-up">
+        <h4 class="center-align" style="color:#00e5ff;text-shadow: 1px 1px #f52789,  3px 3px #000000;">Contact</h4>
+               <div class="card-panel no-padding ">
           <div class="row">
             <div class="col s12 no-padding">
               <img class="responsive-img materialboxed" src="./src/img/profile_photo.jpg">

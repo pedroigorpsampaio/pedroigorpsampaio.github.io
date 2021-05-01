@@ -114,13 +114,20 @@ nav {
 
 /* Carousel */
 
-.carousel { 
-min-height: 500px;
+#demo-carousel, #demo-carousel2 { 
+    min-height: 500px;
 }
 
-.carousel .carousel-item {
-margin-top:-10%;
-width:500px !important;}
+.carousel #default_car{
+    margin-top:-10%;
+    width:500px !important;
+}
+
+.carousel #bigger_car{
+    margin-top:-13%;
+    width:620px !important;
+    height: 10px !important;
+}
 
 /* Card */
 
