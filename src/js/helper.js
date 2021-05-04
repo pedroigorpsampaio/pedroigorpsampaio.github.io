@@ -52,5 +52,16 @@ $(document).ready(function(){
             return false;      
       });
       
+      // nav-bar timer for materialboxed toggle check
+      setInterval(function(){ 
+          if($(".materialboxed.active").length) {
+            $('.navbar-fixed').css({'display': 'none'});       
+          } 
+          else {
+            $('.navbar-fixed').css({'display': 'initial'});  
+          }
+      }, 200);
+
+    
     });
  
