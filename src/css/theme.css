@@ -129,6 +129,11 @@ nav {
     height: 10px !important;
 }
 
+#media {
+    position: relative; 
+    z-index: 1;
+}
+
 /* Card */
 
 .card span {
