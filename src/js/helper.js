@@ -53,12 +53,12 @@ $(document).ready(function(){
       });
       
       // nav-bar timer for materialboxed toggle check
-      setInterval(function(){ 
+      setInterval(function(){        
           if($(".materialboxed.active").length) {
-            $('.navbar-fixed').css({'display': 'none'});       
+            $('.navbar-fixed').css({'visibility': 'hidden'});       
           } 
           else {
-            $('.navbar-fixed').css({'display': 'initial'});  
+            $('.navbar-fixed').css({'visibility': 'visible'});  
           }
       }, 200);
 
