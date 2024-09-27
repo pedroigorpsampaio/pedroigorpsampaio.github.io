@@ -10,6 +10,12 @@ $(document).ready(function(){
       });      
       
       // page loaders
+	  $('#roguefantasypage').click(function(e){
+            e.preventDefault();   
+            $('#content').load('roguefantasy.html');     
+            return false;
+      });
+	  
       $('#pucmonpage').click(function(e){
             e.preventDefault();   
             $('#content').load('pucmon.html');     
